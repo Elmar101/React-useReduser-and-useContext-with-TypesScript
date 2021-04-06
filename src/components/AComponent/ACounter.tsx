@@ -9,8 +9,14 @@ const ACounter = () => {
         <button onClick={()=>  counterContext.countDispatch!({type:'INCREAMENT', payload: 1})}> +1 </button>
         <button onClick={()=>  counterContext.countDispatch!({type: 'DECREAMENT', payload: 1})}> -1 </button>
         <button onClick={()=>  counterContext.countDispatch!({type: 'RESET'})}> reset </button>
-        <h1> Changes Count from AChildCounter </h1>
-        <AChildCounter/>
+
+        {counterContext.count > 20 &&
+            <>
+             <h3> Changes Count from AChildCounter </h3>
+             <AChildCounter/>
+            </>
+        }
+       
         </>
     )
 }

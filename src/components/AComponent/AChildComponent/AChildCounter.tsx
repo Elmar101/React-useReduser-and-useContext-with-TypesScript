@@ -6,8 +6,8 @@ const AChildCounter = () => {
     return (
         <>
         <span style={{color:'yellow'}}> CounterAChild -</span>
-        <button onClick={()=>  counterContext.countDispatch!({type:'INCREAMENT', payload: 1})}> +1 </button>
-        <button onClick={()=>  counterContext.countDispatch!({type: 'DECREAMENT', payload: 1})}> -1 </button>
+        <button onClick={()=>  counterContext.countDispatch!({type:'INCREAMENT', payload: 20})}> +20 </button>
+        <button onClick={()=>  counterContext.countDispatch!({type: 'DECREAMENT', payload: 20})}> -20 </button>
         <button onClick={()=>  counterContext.countDispatch!({type: 'RESET'})}> reset </button>
         </>
     )
